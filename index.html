@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A_UnitConverter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet", href="style.css">
+</head>
+
+<body>    
+    <h1>A_UnitConverter</h1>
+
+    <br>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Length')" id="defaultOpen">Length</button>
+        <button class="tablinks" onclick="openTab(event, 'Area')">Area</button>
+        <button class="tablinks" onclick="openTab(event, 'Volume')">Volume</button>
+        <button class="tablinks" onclick="openTab(event, 'Time')">Time</button>
+        <button class="tablinks" onclick="openTab(event, 'Mass')">Mass</button>
+        <button class="tablinks" onclick="openTab(event, 'Velocity')" state="active">Velocity</button>
+    </div>
+
+
+    <div id="Length" class="tabcontent">
+        <p>Convert <i>Length</i> from</p>
+
+        <select>
+            <option>micrometre (µm)</option>
+            <option>millimetre (mm)</option>
+            <option>centimetre (cm)</option>
+            <option>decimetre (dm)</option>
+            <option>metre (m)</option>
+            <option>decametre (dam)</option>
+            <option>hectometre (hm)</option>
+            <option>kilometre (km)</option>
+            <option>inch (in)</option>
+            <option>foot (ft)</option>
+            <option>yard (yd)</option>
+            <option>mile (mi)</option>
+            <option>nautical mile (nmi)</option>
+        </select>
+
+        <p>To</p>
+
+        <select>
+            <option>Mile (mi)</option>
+            <option>Meter (m)</option>
+        </select>
+    </div>
+
+    <div id="Area" class="tabcontent">
+        <p>Convert <i>Area</i> from</p>
+
+        <select>
+            <option>Meter (m)</option>
+            <option>Mile (mi)</option>
+        </select>
+
+        <p>To</p>
+
+        <select>
+            <option>Mile (mi)</option>
+            <option>Meter (m)</option>
+        </select>
+    </div>
+
+    <div id="Volume" class="tabcontent">
+        <p>Convert <i>Volume</i> from</p>
+
+        <select>
+            <option>Meter (m)</option>
+            <option>Mile (mi)</option>
+        </select>
+
+        <p>To</p>
+
+        <select>
+            <option>Mile (mi)</option>
+            <option>Meter (m)</option>
+        </select>
+    </div>
+
+    <div id="Time" class="tabcontent">
+        <p>Convert <i>Time</i> from</p>
+
+        <select>
+            <option>Meter (m)</option>
+            <option>Mile (mi)</option>
+        </select>
+
+        <p>To</p>
+
+        <select>
+            <option>Mile (mi)</option>
+            <option>Meter (m)</option>
+        </select>
+    </div>
+
+    <div id="Mass" class="tabcontent">
+        <p>Convert <i>Mass</i> from</p>
+
+        <select>
+            <option>Meter (m)</option>
+            <option>Mile (mi)</option>
+        </select>
+
+        <p>To</p>
+
+        <select>
+            <option>Mile (mi)</option>
+            <option>Meter (m)</option>
+        </select>
+    </div>
+
+    <div id="Velocity" class="tabcontent">
+        <p>Convert <i>Velocity</i> from</p>
+
+        <select>
+            <option>Meter (m)</option>
+            <option>Mile (mi)</option>
+        </select>
+
+        <p>To</p>
+
+        <select>
+            <option>Mile (mi)</option>
+            <option>Meter (m)</option>
+        </select>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
