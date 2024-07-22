@@ -10,6 +10,7 @@
 
   --textColor: #e1e2e3;
   --borderColor: #e1e2e3;
+  --headingColor: #f3a96a;
 }
 
 body {
@@ -22,7 +23,7 @@ h1 {
   font-weight: 100;
   font-size: 30px;
   text-align: center;
-  color: #f3a96a;
+  color: var(--headingColor);
 }
 
 p {

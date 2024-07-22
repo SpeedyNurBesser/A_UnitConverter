@@ -10,11 +10,24 @@
 
   <body>
     <h1>A_UnitConverter</h1>
+    <p
+      onclick="toggleDisplayMode()"
+      style="text-align: center; cursor: pointer; user-select: none"
+      id="DisplayMode"
+    >
+      <b>&#9788;</b>
+    </p>
 
     <br />
 
     <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'Length')" id="defaultOpen">Distance</button>
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'Length')"
+        id="defaultOpen"
+      >
+        Distance
+      </button>
       <button class="tablinks" onclick="openTab(event, 'Area')">Area</button>
       <button class="tablinks" onclick="openTab(event, 'Volume')">
         Volume
@@ -28,10 +41,19 @@
       <p>Convert <i>Distance</i></p>
 
       <p>From</p>
+
       <input / id="LengthInput1">
       <select class="LengthSelect" id="LengthSelect1"></select>
 
-      <p>To</p>
+      <p>
+        <span style="display: inline-block; width: 220px">To</span>
+        <b
+          style="cursor: pointer; user-select: none"
+          onclick="swapSelectValues('LengthSelect1', 'LengthSelect2')"
+          >&#8693;</b
+        >
+      </p>
+
       <input / id="LengthInput2">
       <select class="LengthSelect" id="LengthSelect2"></select>
 
@@ -59,7 +81,15 @@
       <input / id="AreaInput1">
       <select class="AreaSelect" id="AreaSelect1"></select>
 
-      <p>To</p>
+      <p>
+        <span style="display: inline-block; width: 220px">To</span>
+        <b
+          style="cursor: pointer; user-select: none"
+          onclick="swapSelectValues('AreaSelect1', 'AreaSelect2')"
+          >&#8693;</b
+        >
+      </p>
+
       <input / id="AreaInput2">
       <select class="AreaSelect" id="AreaSelect2"></select>
 
@@ -87,7 +117,15 @@
       <input / id="VolumeInput1">
       <select class="VolumeSelect" id="VolumeSelect1"></select>
 
-      <p>To</p>
+      <p>
+        <span style="display: inline-block; width: 220px">To</span>
+        <b
+          style="cursor: pointer; user-select: none"
+          onclick="swapSelectValues('VolumeSelect1', 'VolumeSelect2')"
+          >&#8693;</b
+        >
+      </p>
+
       <input / id="VolumeInput2">
       <select class="VolumeSelect" id="VolumeSelect2"></select>
 
@@ -115,7 +153,15 @@
       <input / id="VolumeInput1">
       <select class="VolumeSelect" id="VolumeSelect1"></select>
 
-      <p>To</p>
+      <p>
+        <span style="display: inline-block; width: 220px">To</span>
+        <b
+          style="cursor: pointer; user-select: none"
+          onclick="swapSelectValues('TimeSelect1', 'TimeSelect2')"
+          >&#8693;</b
+        >
+      </p>
+
       <input / id="VolumeInput2">
       <select class="VolumeSelect" id="VolumeSelect2"></select>
 
@@ -143,7 +189,15 @@
       <input / id="MassInput1">
       <select class="MassSelect" id="MassSelect1"></select>
 
-      <p>To</p>
+      <p>
+        <span style="display: inline-block; width: 220px">To</span>
+        <b
+          style="cursor: pointer; user-select: none"
+          onclick="swapSelectValues('MassSelect1', 'MassSelect2')"
+          >&#8693;</b
+        >
+      </p>
+
       <input / id="MassInput2">
       <select class="MassSelect" id="MassSelect2"></select>
 
@@ -165,11 +219,22 @@
     </div>
 
     <div id="About" class="tabcontent">
-        <p>Why did I make A_UnitConverter?</p>
-        
-        <p>1. Training (I have never really written much code in JavaScript and I really wanted to make adding new units as simple as possible using a JSON file) <br> 2. To see what I could do in 2 days (Spoiler: I was able to <i>not</i> finish)<br> 3. Enjoy my new found interest for the ~8 different medieval pint units</p>
+      <p>Why did I create A_UnitConverter?</p>
 
-        <p>Anyway, bye... <br> ~Ole370</p>
+      <p>
+        1. Training (I have never really written much code in JavaScript and I
+        really wanted to make adding new units as easy as possible using a JSON
+        file) <br />
+        2. To see what I could do in 2 days (Spoiler: I was able to
+        <i>not</i> finish)<br />
+        3. Enjoy my new found interest for the ~8 different medieval pint units
+      </p>
+
+      <p>
+        Anyway, bye... <br />
+        ~Ole370
+      </p>
+    </div>
 
     <script src="script.js"></script>
   </body>

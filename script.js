@@ -39,7 +39,16 @@ function toggleDisplayMode() {
 
   if (bgColor == "#1c1e1f") {
     // already darkMode => set lightMode
-    // TODO: find some lightMode colors
+    root.style.setProperty("--bgColor", "#f7f8f9");
+    root.style.setProperty("--selectBgColor", "#f1f2f4");
+    root.style.setProperty("--selectActiveColor", "#b3b9c4");
+    root.style.setProperty("--tabBgColor", "#dcdfe4");
+
+    root.style.setProperty("--textColor", "#1c1e1f");
+    root.style.setProperty("--borderColor", "#1c1e1f");
+    root.style.setProperty("--headingColor", "#161a1d");
+
+    document.getElementById("DisplayMode").innerHTML = "<b>&#9790;</b>";
   } else {
     // already lightMode => set darkMode
     root.style.setProperty("--bgColor", "#1c1e1f");
@@ -49,7 +58,21 @@ function toggleDisplayMode() {
 
     root.style.setProperty("--textColor", "#e1e2e3");
     root.style.setProperty("--borderColor", "#e1e2e3");
+    root.style.setProperty("--headingColor", "#f3a96a");
+
+    document.getElementById("DisplayMode").innerHTML = "<b>&#9788;</b>";
   }
+}
+
+function swapSelectValues(selectId1, selectId2) {
+  let element1 = document.getElementById(selectId1);
+  let element2 = document.getElementById(selectId2);
+
+  let value1 = element1.value;
+  let value2 = element2.value;
+
+  element1.value = value2;
+  element2.value = value1;
 }
 
 function createSelectOptions(selectClass, optionsToCreate) {
@@ -65,6 +88,9 @@ function createSelectOptions(selectClass, optionsToCreate) {
 }
 
 async function convert(unitType, number, unit1, unit2, displayId) {
+  if (number == "") {
+    return;
+  }
   // unitType = nameOfJsonNamespace
   let json = units[unitType];
 
@@ -106,5 +132,3 @@ window.onload = function () {
 };
 
 // TODO: finish units.json
-// TODO: add "swap unit arrow button thing"
-// TODO: clear Input When Reloading
