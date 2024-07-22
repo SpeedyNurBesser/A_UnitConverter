@@ -1,3 +1,4 @@
+let root = document.querySelector(":root");
 let units = null;
 
 async function loadUnits() {
@@ -12,10 +13,7 @@ async function loadUnits() {
   createSelectOptions("MassSelect", units.MassUnits);
   createSelectOptions("VelocitySelect", units.VelocityUnits);
 }
-
 loadUnits();
-
-let root = document.querySelector(":root");
 
 function openTab(evt, tabName) {
   let i, tabcontent, tablinks;
@@ -89,6 +87,23 @@ async function convert(unitType, number, unit1, unit2, displayId) {
   // display result
   document.getElementById(displayId).value = result;
 }
+
+window.onload = function () {
+  document.getElementById("LengthInput1").value = "";
+  document.getElementById("LengthInput2").value = "";
+
+  document.getElementById("AreaInput1").value = "";
+  document.getElementById("AreaInput2").value = "";
+
+  document.getElementById("VolumeInput1").value = "";
+  document.getElementById("VolumeInput2").value = "";
+
+  document.getElementById("TimeInput1").value = "";
+  document.getElementById("TimeInput2").value = "";
+
+  document.getElementById("MassInput1").value = "";
+  document.getElementById("MassInput2").value = "";
+};
 
 // TODO: finish units.json
 // TODO: add "swap unit arrow button thing"
