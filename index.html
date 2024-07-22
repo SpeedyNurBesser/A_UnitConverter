@@ -1,142 +1,174 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A_UnitConverter</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet", href="style.css">
-</head>
+    <link rel="stylesheet" , href="style.css" />
+  </head>
 
-<body>    
+  <body>
     <h1>A_UnitConverter</h1>
 
-    <br>
+    <br />
 
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Length')" id="defaultOpen">Length</button>
-        <button class="tablinks" onclick="openTab(event, 'Area')">Area</button>
-        <button class="tablinks" onclick="openTab(event, 'Volume')">Volume</button>
-        <button class="tablinks" onclick="openTab(event, 'Time')">Time</button>
-        <button class="tablinks" onclick="openTab(event, 'Mass')">Mass</button>
-        <button class="tablinks" onclick="openTab(event, 'Velocity')" state="active">Velocity</button>
+      <button class="tablinks" onclick="openTab(event, 'Length')" id="defaultOpen">Distance</button>
+      <button class="tablinks" onclick="openTab(event, 'Area')">Area</button>
+      <button class="tablinks" onclick="openTab(event, 'Volume')">
+        Volume
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'Time')">Time</button>
+      <button class="tablinks" onclick="openTab(event, 'Mass')">Mass</button>
+      <button class="tablinks" onclick="openTab(event, 'About')">About</button>
     </div>
 
-
     <div id="Length" class="tabcontent">
-        <p>Convert <i>Length</i> from</p>
+      <p>Convert <i>Distance</i></p>
 
-        <select>
-            <option>micrometre (µm)</option>
-            <option>millimetre (mm)</option>
-            <option>centimetre (cm)</option>
-            <option>decimetre (dm)</option>
-            <option>metre (m)</option>
-            <option>decametre (dam)</option>
-            <option>hectometre (hm)</option>
-            <option>kilometre (km)</option>
-            <option>inch (in)</option>
-            <option>foot (ft)</option>
-            <option>yard (yd)</option>
-            <option>mile (mi)</option>
-            <option>nautical mile (nmi)</option>
-        </select>
+      <p>From</p>
+      <input / id="LengthInput1">
+      <select class="LengthSelect" id="LengthSelect1"></select>
 
-        <p>To</p>
+      <p>To</p>
+      <input / id="LengthInput2">
+      <select class="LengthSelect" id="LengthSelect2"></select>
 
-        <select>
-            <option>Mile (mi)</option>
-            <option>Meter (m)</option>
-        </select>
+      <br />
+      <br />
+      <br />
+
+      <button
+        onclick="convert(
+            'LengthUnits',
+            document.getElementById('LengthInput1').value, 
+            document.getElementById('LengthSelect1').value, //toBase
+            document.getElementById('LengthSelect2').value, //fromBase
+            'LengthInput2'
+            )"
+      >
+        Convert
+      </button>
     </div>
 
     <div id="Area" class="tabcontent">
-        <p>Convert <i>Area</i> from</p>
+      <p>Convert <i>Area</i> from</p>
 
-        <select>
-            <option>Meter (m)</option>
-            <option>Mile (mi)</option>
-        </select>
+      <p>From</p>
+      <input / id="AreaInput1">
+      <select class="AreaSelect" id="AreaSelect1"></select>
 
-        <p>To</p>
+      <p>To</p>
+      <input / id="AreaInput2">
+      <select class="AreaSelect" id="AreaSelect2"></select>
 
-        <select>
-            <option>Mile (mi)</option>
-            <option>Meter (m)</option>
-        </select>
+      <br />
+      <br />
+      <br />
+
+      <button
+        onclick="convert(
+            'AreaUnits',
+            document.getElementById('AreaInput1').value, 
+            document.getElementById('AreaSelect1').value, //toBase
+            document.getElementById('AreaSelect2').value, //fromBase
+            'AreaInput2'
+            )"
+      >
+        Convert
+      </button>
     </div>
 
     <div id="Volume" class="tabcontent">
-        <p>Convert <i>Volume</i> from</p>
+      <p>Convert <i>Volume</i> from</p>
 
-        <select>
-            <option>Meter (m)</option>
-            <option>Mile (mi)</option>
-        </select>
+      <p>From</p>
+      <input / id="VolumeInput1">
+      <select class="VolumeSelect" id="VolumeSelect1"></select>
 
-        <p>To</p>
+      <p>To</p>
+      <input / id="VolumeInput2">
+      <select class="VolumeSelect" id="VolumeSelect2"></select>
 
-        <select>
-            <option>Mile (mi)</option>
-            <option>Meter (m)</option>
-        </select>
+      <br />
+      <br />
+      <br />
+
+      <button
+        onclick="convert(
+            'VolumeUnits',
+            document.getElementById('VolumeInput1').value, 
+            document.getElementById('VolumeSelect1').value, //toBase
+            document.getElementById('VolumeSelect2').value, //fromBase
+            'VolumeInput2'
+            )"
+      >
+        Convert
+      </button>
     </div>
 
     <div id="Time" class="tabcontent">
-        <p>Convert <i>Time</i> from</p>
+      <p>Convert <i>Time</i> from</p>
 
-        <select>
-            <option>Meter (m)</option>
-            <option>Mile (mi)</option>
-        </select>
+      <p>From</p>
+      <input / id="VolumeInput1">
+      <select class="VolumeSelect" id="VolumeSelect1"></select>
 
-        <p>To</p>
+      <p>To</p>
+      <input / id="VolumeInput2">
+      <select class="VolumeSelect" id="VolumeSelect2"></select>
 
-        <select>
-            <option>Mile (mi)</option>
-            <option>Meter (m)</option>
-        </select>
+      <br />
+      <br />
+      <br />
+
+      <button
+        onclick="convert(
+            'VolumeUnits',
+            document.getElementById('VolumeInput1').value, 
+            document.getElementById('VolumeSelect1').value, //toBase
+            document.getElementById('VolumeSelect2').value, //fromBase
+            'VolumeInput2'
+            )"
+      >
+        Convert
+      </button>
     </div>
 
     <div id="Mass" class="tabcontent">
-        <p>Convert <i>Mass</i> from</p>
+      <p>Convert <i>Mass</i> from</p>
 
-        <select>
-            <option>Meter (m)</option>
-            <option>Mile (mi)</option>
-        </select>
+      <p>From</p>
+      <input / id="MassInput1">
+      <select class="MassSelect" id="MassSelect1"></select>
 
-        <p>To</p>
+      <p>To</p>
+      <input / id="MassInput2">
+      <select class="MassSelect" id="MassSelect2"></select>
 
-        <select>
-            <option>Mile (mi)</option>
-            <option>Meter (m)</option>
-        </select>
+      <br />
+      <br />
+      <br />
+
+      <button
+        onclick="convert(
+            'MassUnits',
+            document.getElementById('MassInput1').value, 
+            document.getElementById('MassSelect1').value, //toBase
+            document.getElementById('MassSelect2').value, //fromBase
+            'MassInput2'
+            )"
+      >
+        Convert
+      </button>
     </div>
 
-    <div id="Velocity" class="tabcontent">
-        <p>Convert <i>Velocity</i> from</p>
-
-        <select>
-            <option>Meter (m)</option>
-            <option>Mile (mi)</option>
-        </select>
-
-        <p>To</p>
-
-        <select>
-            <option>Mile (mi)</option>
-            <option>Meter (m)</option>
-        </select>
-    </div>
+    <div id="About" class="tabcontent">
+        <p>Why did I make A_UnitConverter?</p>
+        
+        <p>1. Training (I have never really written much code in JavaScript and I really wanted to make adding new units as simple as possible using a JSON file) <br> 2. To see what I could do in 2 days (Spoiler: I was able to <i>not</i> finish)<br> 3. Enjoy my new found interest for the ~8 different medieval pint units</p>
 
     <script src="script.js"></script>
-
-</body>
-
-
+  </body>
 </html>

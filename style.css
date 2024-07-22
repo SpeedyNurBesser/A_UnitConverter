@@ -1,65 +1,67 @@
-* {box-sizing: border-box}
+* {
+  box-sizing: border-box;
+}
 
 :root {
-    --bgColor: #1c1e1f;
-    --selectBgColor: #21282c;
-    --selectActiveColor: #353f46;
-    --tabBgColor: #313b42;
+  --bgColor: #1c1e1f;
+  --selectBgColor: #21282c;
+  --selectActiveColor: #353f46;
+  --tabBgColor: #313b42;
 
-    --textColor: #e1e2e3;
-    --borderColor: #e1e2e3;
+  --textColor: #e1e2e3;
+  --borderColor: #e1e2e3;
 }
 
 body {
-    background-color: var(--bgColor);
-    font-family: Helvetica;
+  background-color: var(--bgColor);
+  font-family: Helvetica;
 }
 
-h1  {
-    font-style: italic;
-    font-weight: 100;
-    font-size: 30px;
-    text-align: center;
-    color: #f3a96a;
+h1 {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 30px;
+  text-align: center;
+  color: #f3a96a;
 }
 
 p {
-    color: var(--textColor);
+  color: var(--textColor);
 }
 
 .tab {
-    float: left;
-    border: 1px solid var(--borderColor);
-    background-color: var(--selectBgColor);
-    width: 30%;
-    height: 350px;
-  }
+  float: left;
+  border: 1px solid var(--borderColor);
+  background-color: var(--selectBgColor);
+  width: 25%;
+  height: 350px;
+}
 
 .tab button {
-    color: var(--textColor);
-    background: rgba(0,0,0,0.0);
-    padding: 21px 20px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
+  color: var(--textColor);
+  background: rgba(0, 0, 0, 0);
+  padding: 21px 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
 }
 
 .tab button:hover {
-    background-color: var(--tabBgColor);
+  background-color: var(--tabBgColor);
 }
 
 .tab button.active {
-    background-color: var(--selectActiveColor);
+  background-color: var(--selectActiveColor);
 }
 
 .tabcontent {
-    float: left;
-    padding: 0px 12px;
-    border: 1px solid var(--borderColor);
-    width: 70%;
-    border-left: none;
-    height: 350px;
-    background-color: var(--tabBgColor);
-  }
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid var(--borderColor);
+  width: 75%;
+  border-left: none;
+  height: 350px;
+  background-color: var(--tabBgColor);
+}

@@ -1,0 +1,74 @@
+{
+  "LengthUnits": [
+    {
+      "displayName": "Micrometre (µm)",
+      "fromBase": 1000000,
+      "toBase": 0.000001
+    },
+    {
+      "displayName": "Millimetre (mm)",
+      "fromBase": 1000,
+      "toBase": 0.001
+    },
+    {
+      "displayName": "Centimetre (cm)",
+      "fromBase": 100,
+      "toBase": 0.01
+    },
+    {
+      "displayName": "Decimetre (dm)",
+      "fromBase": 10,
+      "toBase": 0.1
+    },
+    {
+      "displayName": "Metre (m)",
+      "fromBase": 1,
+      "toBase": 1
+    },
+    {
+      "displayName": "Decametre (dam)",
+      "fromBase": 0.1,
+      "toBase": 10
+    },
+    {
+      "displayName": "Hectometre (hm)",
+      "fromBase": 0.01,
+      "toBase": 100
+    },
+    {
+      "displayName": "Kilometre (km)",
+      "fromBase": 0.001,
+      "toBase": 1000
+    },
+    {
+      "displayName": "Inch (in)",
+      "fromBase": 39.37008,
+      "toBase": 0.0254
+    },
+    {
+      "displayName": "Foot (ft)",
+      "fromBase": 3.28084,
+      "toBase": 0.3048
+    },
+    {
+      "displayName": "Yard (yd)",
+      "fromBase": 1.093613,
+      "toBase": 0.9144
+    },
+    {
+      "displayName": "Mile (mi)",
+      "fromBase": 0.0006213712,
+      "toBase": 1609.344
+    },
+    {
+      "displayName": "Nautical mile (nmi)",
+      "fromBase": 0.0005399568,
+      "toBase": 1852
+    }
+  ],
+  "AreaUnits": [],
+  "VolumeUnits": [],
+  "TimeUnits": [],
+  "MassUnits": [],
+  "VelocityUnits": []
+}
