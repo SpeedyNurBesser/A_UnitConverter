@@ -1,6 +1,11 @@
 {
   "LengthUnits": [
     {
+      "displayName": "Nanometre (nm)",
+      "fromBase": 1000000000,
+      "toBase": 0.000000001
+    },
+    {
       "displayName": "Micrometre (µm)",
       "fromBase": 1000000,
       "toBase": 0.000001
@@ -64,11 +69,484 @@
       "displayName": "Nautical mile (nmi)",
       "fromBase": 0.0005399568,
       "toBase": 1852
+    },
+    {
+      "displayName": "Astronomical (AU)",
+      "fromBase": 0.000000000006684587,
+      "toBase": 149597900000
+    },
+    {
+      "displayName": "Light year",
+      "fromBase": 0.00000000000000010570042,
+      "toBase": 9460700000000000
+    },
+    {
+      "displayName": "Parsec (pc)",
+      "fromBase": 0.00000000000000003240756,
+      "toBase": 30857000000000000
+    },
+    {
+      "displayName": "Mil (1/1000 in)",
+      "fromBase": 39370.08,
+      "toBase": 0.0000254
+    },
+    {
+      "displayName": "Scandinavian Mile",
+      "fromBase": 0.0001,
+      "toBase": 10000
+    },
+    {
+      "displayName": "Planck length",
+      "fromBase": 61871418100000000000000000000000000,
+      "toBase": 0.0000000000000000000000000000000000161625518
     }
   ],
-  "AreaUnits": [],
-  "VolumeUnits": [],
-  "TimeUnits": [],
-  "MassUnits": [],
-  "VelocityUnits": []
+  "AreaUnits": [
+    {
+      "displayName": "Square Metre (m²)",
+      "fromBase": 1,
+      "toBase": 1
+    },
+    {
+      "displayName": "Square Millimetre (mm²)",
+      "fromBase": 1000000,
+      "toBase": 0.000001
+    },
+    {
+      "displayName": "Square Centimetre (cm²)",
+      "fromBase": 10000,
+      "toBase": 0.0001
+    },
+    {
+      "displayName": "Square Decimetre (dm²)",
+      "fromBase": 100,
+      "toBase": 0.01
+    },
+    {
+      "displayName": "Are (a)",
+      "fromBase": 0.01,
+      "toBase": 100
+    },
+    {
+      "displayName": "Hectare (ha)",
+      "fromBase": 0.0001,
+      "toBase": 10000
+    },
+    {
+      "displayName": "Square Kilometre (km²)",
+      "fromBase": 0.000001,
+      "toBase": 1000000
+    },
+    {
+      "displayName": "Square Mile (mi²)",
+      "fromBase": 0.0000003861022,
+      "toBase": 2589988
+    },
+    {
+      "displayName": "Square Inch (in²)",
+      "fromBase": 1550.003,
+      "toBase": 144
+    },
+    {
+      "displayName": "Square Foot (ft²)",
+      "fromBase": 10.76391,
+      "toBase": 0.09290304
+    },
+    {
+      "displayName": "Square Yard (yd²)",
+      "fromBase": 1.19599,
+      "toBase": 0.8361274
+    },
+    {
+      "displayName": "Acre",
+      "fromBase": 0.0002471054,
+      "toBase": 4046.856
+    }
+  ],
+  "VolumeUnits": [
+    {
+      "displayName": "Litre (L, l)",
+      "fromBase": 1,
+      "toBase": 1
+    },
+    {
+      "displayName": "Millilitre (ml)",
+      "fromBase": 1000,
+      "toBase": 0.001
+    },
+    {
+      "displayName": "Cubic Centimetre (cm)",
+      "fromBase": 1000,
+      "toBase": 0.001
+    },
+    {
+      "displayName": "Cubic Decimetre (dm)",
+      "fromBase": 1,
+      "toBase": 1
+    },
+    {
+      "displayName": "Cubic Millimetre (mm)",
+      "fromBase": 1000000,
+      "toBase": 0.000001
+    },
+    {
+      "displayName": "Cubic Metre (m)",
+      "fromBase": 0.001,
+      "toBase": 1000
+    },
+    {
+      "displayName": "Cubic Decametre (dam)",
+      "fromBase": 0.000001,
+      "toBase": 1000000
+    },
+    {
+      "displayName": "Cubic Hectometre (hm)",
+      "fromBase": 0.000000001,
+      "toBase": 1000000000
+    },
+    {
+      "displayName": "Cubic Kilometre (km)",
+      "fromBase": 0.000000000001,
+      "toBase": 1000000000000
+    },
+    {
+      "displayName": "Cubic Inch (in)",
+      "fromBase": 61.02375899,
+      "toBase": 0.01638706
+    },
+    {
+      "displayName": "Cubic Foot (ft)",
+      "fromBase": 0.03531466247,
+      "toBase": 28.31685
+    },
+    {
+      "displayName": "Cubic Yard (yd)",
+      "fromBase": 0.001307950547,
+      "toBase": 764.5549
+    },
+    {
+      "displayName": "Cubic Mile (mi)",
+      "fromBase": 0.0000000000002399127586,
+      "toBase": 4168181825440.6
+    },
+    {
+      "displayName": "US Gallon (US gal)",
+      "fromBase": 0.2641720373,
+      "toBase": 3.785412
+    },
+    {
+      "displayName": "(usdrygal)",
+      "fromBase": 3.785411784,
+      "toBase": 4.40488377086
+    },
+    {
+      "displayName": "Imperial Gallon (imp gal)",
+      "fromBase": 0.2199692483,
+      "toBase": 4.54609
+    },
+    {
+      "displayName": "Imp fluid ounce (imp fl oz)",
+      "fromBase": 35.19507754,
+      "toBase": 0.0284130642624675
+    },
+    {
+      "displayName": "US fluid ounce (fl oz)",
+      "fromBase": 33.8140227,
+      "toBase": 0.0295735295625
+    },
+    {
+      "displayName": "Imperial Pint (imp pt)",
+      "fromBase": 1.759753877,
+      "toBase": 0.56826128524935
+    },
+    {
+      "displayName": "US liquid Pint (us pt)",
+      "fromBase": 2.113376419,
+      "toBase": 0.473176473
+    },
+    {
+      "displayName": "US dry Pint (usdrypt)",
+      "fromBase": 1.816165969,
+      "toBase": 0.5506104713575
+    },
+    {
+      "displayName": "Scottish Pint (pre 1824)",
+      "fromBase": 0.6129328838,
+      "toBase": 1.6315
+    },
+    {
+      "displayName": "Metric Pint",
+      "fromBase": 2,
+      "toBase": 0.5
+    },
+    {
+      "displayName": "Paris Cubic Foot",
+      "fromBase": 0.02917382709,
+      "toBase": 34.2772992
+    },
+    {
+      "displayName": "Paris Cubic Inch",
+      "fromBase": 50.412438,
+      "toBase": 0.0198364
+    },
+    {
+      "displayName": "Paris Cubic Line",
+      "fromBase": 88625.066,
+      "toBase": 0.000011479398148148148148148148148148
+    },
+    {
+      "displayName": "Metric Teaspoon",
+      "fromBase": 200,
+      "toBase": 0.005
+    },
+    {
+      "displayName": "US Teaspoon",
+      "fromBase": 202.8841195,
+      "toBase": 0.004928922
+    }
+  ],
+  "TimeUnits": [
+    {
+      "displayName": "Second (s)",
+      "fromBase": 1,
+      "toBase": 1
+    },
+    {
+      "displayName": "Minute (min)",
+      "fromBase": 0.166666666666666666,
+      "toBase": 60
+    },
+    {
+      "displayName": "Hour (h)",
+      "fromBase": 0.0002777777777777778,
+      "toBase": 3600
+    },
+    {
+      "displayName": "Day (d)",
+      "fromBase": 0.000011574074074074075,
+      "toBase": 86400
+    },
+    {
+      "displayName": "Week",
+      "fromBase": 0.0000016534391534391535,
+      "toBase": 604800
+    },
+    {
+      "displayName": "Fortnight",
+      "fromBase": 0.0000008267195767195767,
+      "toBase": 1209600
+    },
+    {
+      "displayName": "Common Month (30d)",
+      "fromBase": 0.00000038580246913580245,
+      "toBase": 2592000
+    },
+    {
+      "displayName": "Month (30.436875d)",
+      "fromBase": 0.0000003802648620817372,
+      "toBase": 2629746
+    },
+    {
+      "displayName": "Common Year (365d)",
+      "fromBase": 0.00000003170979198376459,
+      "toBase": 31536000
+    },
+    {
+      "displayName": "Solar Year",
+      "fromBase": 0.000000031688765357572506,
+      "toBase": 31556925.260928
+    },
+    {
+      "displayName": "My Math Year (365,2425)",
+      "fromBase": 0.00000003168873850681143,
+      "toBase": 31556952
+    },
+    {
+      "displayName": "Leap Year (366d)",
+      "fromBase": 0.000000031623153207852663,
+      "toBase": 31622400
+    },
+    {
+      "displayName": "Olympiad",
+      "fromBase": 0.000000007922184626702858,
+      "toBase": 126227808
+    },
+    {
+      "displayName": "Decade",
+      "fromBase": 0.000000003168873850681143,
+      "toBase": 315569520
+    },
+    {
+      "displayName": "Century",
+      "fromBase": 0.0000000003168873850681143,
+      "toBase": 3155695200
+    },
+    {
+      "displayName": "Millenium",
+      "fromBase": 0.00000000003168873850681143,
+      "toBase": 31556952000
+    },
+    {
+      "displayName": "Mega-Year/Annum (ma)",
+      "fromBase": 0.000000000000031688738506811434,
+      "toBase": 31556952000000
+    },
+    {
+      "displayName": "Eon",
+      "fromBase": 0.00000000000000003168873850681143,
+      "toBase": 31556952000000000
+    },
+    {
+      "displayName": "Galactic Year (gal)",
+      "fromBase": 0.0000000000000001408388378080508,
+      "toBase": 7100314200000000
+    },
+    {
+      "displayName": "Age of the Universe",
+      "fromBase": 0.0000000000000000022999776589370122,
+      "toBase": 434786832000000000
+    },
+    {
+      "displayName": "Planck time",
+      "fromBase": 18550948324478347000000000000000000000000000,
+      "toBase": 0.0000000000000000000000000000000000000000000539056
+    },
+    {
+      "displayName": "Nanosecond (ns)",
+      "fromBase": 1000000000,
+      "toBase": 0.000000001
+    },
+    {
+      "displayName": "Microsecond (µs)",
+      "fromBase": 1000000,
+      "toBase": 0.000001
+    },
+    {
+      "displayName": "Millisecond (ms)",
+      "fromBase": 1000,
+      "toBase": 0.001
+    },
+    {
+      "displayName": "Centisecond (cs)",
+      "fromBase": 100,
+      "toBase": 0.01
+    },
+    {
+      "displayName": "Decisecond (ds)",
+      "fromBase": 10,
+      "toBase": 0.1
+    },
+    {
+      "displayName": "Decasecond (das)",
+      "fromBase": 0.1,
+      "toBase": 10
+    },
+    {
+      "displayName": "Hectosecond (hs)",
+      "fromBase": 0.01,
+      "toBase": 100
+    },
+    {
+      "displayName": "Kilosecond (ks)",
+      "fromBase": 0.001,
+      "toBase": 1000
+    }
+  ],
+  "MassUnits": [
+    {
+      "displayName": "Milligram (mg)",
+      "fromBase": 1000,
+      "toBase": 0.001
+    },
+    {
+      "displayName": "Centigram (cg)",
+      "fromBase": 100,
+      "toBase": 0.01
+    },
+    {
+      "displayName": "Decigram (dg)",
+      "fromBase": 10,
+      "toBase": 0.1
+    },
+    {
+      "displayName": "Gram (g)",
+      "fromBase": 1,
+      "toBase": 1
+    },
+    {
+      "displayName": "Decagram (dag)",
+      "fromBase": 0.1,
+      "toBase": 10
+    },
+    {
+      "displayName": "Hectogram (hg)",
+      "fromBase": 0.01,
+      "toBase": 100
+    },
+    {
+      "displayName": "Kilogram (kg)",
+      "fromBase": 0.001,
+      "toBase": 1000
+    },
+    {
+      "displayName": "Metric ton (t)",
+      "fromBase": 0.000001,
+      "toBase": 1000000
+    },
+    {
+      "displayName": "Solar mass (M☉)",
+      "fromBase": 0.0000000000000000000000000000005029169181251258,
+      "toBase": 1988400000000000000000000000000
+    },
+    {
+      "displayName": "Grain (gr)",
+      "fromBase": 15.43235835294143,
+      "toBase": 0.06479891
+    },
+    {
+      "displayName": "Ounce (oz)",
+      "fromBase": 0.03527396583786957,
+      "toBase": 28.34952
+    },
+    {
+      "displayName": "Slug (sl)",
+      "fromBase": 0.00006852177964766101,
+      "toBase": 14593.9
+    },
+    {
+      "displayName": "Pound (lb)",
+      "fromBase": 0.0022046224760379584,
+      "toBase": 453.5924
+    },
+    {
+      "displayName": "Short Ton",
+      "fromBase": 0.000001102311359527999,
+      "toBase": 907184.7
+    },
+    {
+      "displayName": "Long Ton",
+      "fromBase": 0.0000009842064392690496,
+      "toBase": 1016047
+    },
+    {
+      "displayName": "Carat (ct) = 0,2g",
+      "fromBase": 5,
+      "toBase": 0.2
+    },
+    {
+      "displayName": "Atomic mass unit (u)",
+      "fromBase": 602214100000000000000000,
+      "toBase": 0.000000000000000000000001660539
+    },
+    {
+      "displayName": "Stick",
+      "fromBase": 1,
+      "toBase": 0.008695652173913044
+    },
+    {
+      "displayName": "Stone",
+      "fromBase": 0.00015747304888136658,
+      "toBase": 6350.293
+    }
+  ]
 }

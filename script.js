@@ -132,3 +132,4 @@ window.onload = function () {
 };
 
 // TODO: finish units.json
+// TODO: add copy result
