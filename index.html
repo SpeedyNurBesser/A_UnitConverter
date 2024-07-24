@@ -61,17 +61,20 @@
       <br />
       <br />
 
-      <button
-        onclick="convert(
+      <p>
+        <button
+          onclick="convert(
             'LengthUnits',
             document.getElementById('LengthInput1').value, 
             document.getElementById('LengthSelect1').value, //toBase
             document.getElementById('LengthSelect2').value, //fromBase
             'LengthInput2'
             )"
-      >
-        Convert
-      </button>
+        >
+          Convert
+        </button>
+        <button onclick="copyResult('LengthInput2')">Copy Result</button>
+      </p>
     </div>
 
     <div id="Area" class="tabcontent">
@@ -97,17 +100,20 @@
       <br />
       <br />
 
-      <button
-        onclick="convert(
+      <p>
+        <button
+          onclick="convert(
             'AreaUnits',
             document.getElementById('AreaInput1').value, 
             document.getElementById('AreaSelect1').value, //toBase
             document.getElementById('AreaSelect2').value, //fromBase
             'AreaInput2'
             )"
-      >
-        Convert
-      </button>
+        >
+          Convert
+        </button>
+        <button onclick="copyResult('AreaInput2')">Copy Result</button>
+      </p>
     </div>
 
     <div id="Volume" class="tabcontent">
@@ -133,17 +139,20 @@
       <br />
       <br />
 
-      <button
-        onclick="convert(
+      <p>
+        <button
+          onclick="convert(
             'VolumeUnits',
             document.getElementById('VolumeInput1').value, 
             document.getElementById('VolumeSelect1').value, //toBase
             document.getElementById('VolumeSelect2').value, //fromBase
             'VolumeInput2'
             )"
-      >
-        Convert
-      </button>
+        >
+          Convert
+        </button>
+        <button onclick="copyResult('VolumeInput2')">Copy Result</button>
+      </p>
     </div>
 
     <div id="Time" class="tabcontent">
@@ -169,17 +178,20 @@
       <br />
       <br />
 
-      <button
-        onclick="convert(
+      <p>
+        <button
+          onclick="convert(
             'TimeUnits',
             document.getElementById('TimeInput1').value, 
             document.getElementById('TimeSelect1').value, //toBase
             document.getElementById('TimeSelect2').value, //fromBase
             'TimeInput2'
             )"
-      >
-        Convert
-      </button>
+        >
+          Convert
+        </button>
+        <button onclick="copyResult('TimeInput2')">Copy Result</button>
+      </p>
     </div>
 
     <div id="Mass" class="tabcontent">
@@ -205,17 +217,21 @@
       <br />
       <br />
 
-      <button
-        onclick="convert(
+      <p>
+        <button
+          onclick="convert(
             'MassUnits',
             document.getElementById('MassInput1').value, 
             document.getElementById('MassSelect1').value, //toBase
             document.getElementById('MassSelect2').value, //fromBase
             'MassInput2'
             )"
-      >
-        Convert
-      </button>
+        >
+          Convert
+        </button>
+
+        <button onclick="copyResult('MassInput2')">Copy Result</button>
+      </p>
     </div>
 
     <div id="About" class="tabcontent">

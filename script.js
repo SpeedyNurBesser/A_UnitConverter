@@ -114,6 +114,17 @@ async function convert(unitType, number, unit1, unit2, displayId) {
   document.getElementById(displayId).value = result;
 }
 
+function copyResult(inputId) {
+  let resultToCopy = document.getElementById(inputId);
+
+  resultToCopy.select();
+  resultToCopy.setSelectionRange(0, 99999);
+
+  navigator.clipboard.writeText(resultToCopy.value);
+
+  alert("Copied the result: " + resultToCopy.value);
+}
+
 window.onload = function () {
   document.getElementById("LengthInput1").value = "";
   document.getElementById("LengthInput2").value = "";
@@ -131,5 +142,4 @@ window.onload = function () {
   document.getElementById("MassInput2").value = "";
 };
 
-// TODO: finish units.json
-// TODO: add copy result
+// Future TODO: add copy result
