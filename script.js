@@ -141,5 +141,3 @@ window.onload = function () {
   document.getElementById("MassInput1").value = "";
   document.getElementById("MassInput2").value = "";
 };
-
-// Future TODO: add copy result
